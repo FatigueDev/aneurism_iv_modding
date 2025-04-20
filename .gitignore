@@ -1,0 +1,6 @@
+bin
+libs/*
+**/obj
+
+# Temporarily remove assets until it is ready to go.
+assets

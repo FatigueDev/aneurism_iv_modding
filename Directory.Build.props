@@ -1,0 +1,45 @@
+<!-- <Project>
+
+  <ItemGroup>
+    <Reference Include="libs/0Harmony.dll" Private="False" />
+    <Reference Include="libs/Assembly-CSharp.dll" Private="False" />
+    <Reference Include="libs/BepInEx.Core.dll" Private="False" />
+    <Reference Include="libs/BepInEx.Unity.IL2CPP.dll" Private="False" />
+    <Reference Include="libs/Il2CppInterop.Runtime.dll" Private="False" />
+    <Reference Include="libs/Il2Cppmscorlib.dll" Private="False" />
+    <Reference Include="libs/Mirror.dll" Private="False" />
+    <Reference Include="libs/Unity.RenderPipelines.Core.Runtime.dll" Private="False" />
+    <Reference Include="libs/UnityEngine.AssetBundleModule.dll" Private="False" />
+    <Reference Include="libs/UnityEngine.CoreModule.dll" Private="False" />
+    <Reference Include="libs/UnityEngine.dll" Private="False" />
+  </ItemGroup>
+  
+</Project> -->
+
+
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <!-- Set output path to ProjectRoot/bin/SubProjectName -->
+    <OutputPath>$(MSBuildThisFileDirectory)bin\$(MSBuildProjectName)\</OutputPath>
+    <!-- Prevent adding target framework/RID to output path -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Reference all DLLs in the libs folder (relative path from each project) -->
+    <Reference Include="../libs/*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CleanOutputBeforeBuild" BeforeTargets="BeforeBuild">
+    <Message Importance="high" Text="Cleaning $(OutputPath)..." />
+    <RemoveDir Directories="$(OutputPath)" Condition="Exists('$(OutputPath)')" />
+  </Target>
+
+</Project>
