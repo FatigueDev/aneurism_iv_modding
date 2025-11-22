@@ -1,0 +1,9 @@
+{
+    "name": "RemoveHud",
+    "version_number": "0.0.1",
+    "website_url": "https://github.com/FatigueDev/aneurism_iv_modding/tree/master/remove_hud",
+    "description": "Press `N` to remove the overlay effects of different Fates",
+    "dependencies": [
+        "BepInEx-BepInExPack_IL2CPP-6.0.733"
+    ]
+}

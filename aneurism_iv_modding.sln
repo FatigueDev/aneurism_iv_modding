@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "custom_map", "mods\custom_map_loader\custom_map_loader.csproj", "{C5F52FCF-DCDC-4014-88F1-A9724909EF70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "remove_hud", "mods\remove_hud\remove_hud.csproj", "{3A654461-C611-434A-A411-4AFBE1F637CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mods", "mods", "{0C86B986-03F4-4C2D-8B06-A706A0088772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_map", "mods\test_map\test_map.csproj", "{A4B1A17D-7327-44EE-9A57-63EE99BE91DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F52FCF-DCDC-4014-88F1-A9724909EF70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F52FCF-DCDC-4014-88F1-A9724909EF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F52FCF-DCDC-4014-88F1-A9724909EF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F52FCF-DCDC-4014-88F1-A9724909EF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A654461-C611-434A-A411-4AFBE1F637CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A654461-C611-434A-A411-4AFBE1F637CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A654461-C611-434A-A411-4AFBE1F637CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A654461-C611-434A-A411-4AFBE1F637CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B518EB3-E4A3-4885-A256-F39B8DDD6DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B518EB3-E4A3-4885-A256-F39B8DDD6DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B518EB3-E4A3-4885-A256-F39B8DDD6DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B518EB3-E4A3-4885-A256-F39B8DDD6DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B1A17D-7327-44EE-9A57-63EE99BE91DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B1A17D-7327-44EE-9A57-63EE99BE91DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B1A17D-7327-44EE-9A57-63EE99BE91DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B1A17D-7327-44EE-9A57-63EE99BE91DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4B1A17D-7327-44EE-9A57-63EE99BE91DF} = {0C86B986-03F4-4C2D-8B06-A706A0088772}
+	EndGlobalSection
+EndGlobal

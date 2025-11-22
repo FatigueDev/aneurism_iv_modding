@@ -8,13 +8,12 @@ using UnityEngine.Rendering;
 
 namespace remove_hud
 {
-
 	public class RemoveHud_Component : MonoBehaviour
 	{
 		void Update()
 		{
 			// This shows a red squiggly, but the function and module _do_ exist.
-			if(UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.N))
+			if(Input.GetKeyDown(KeyCode.N))
 			{
 				if(RemoveHud.storedVolumeProfileComponents != null)
 				{
